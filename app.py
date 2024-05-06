@@ -3,7 +3,6 @@ from flask import Flask, jsonify, request
 from auth_utility import token_required, AuthUtility
 
 app = Flask(__name__)
-SECRET_KEY = 'nejaky nahodny retazaec'
 
 
 @app.route('/generate-token', methods=['POST'])
